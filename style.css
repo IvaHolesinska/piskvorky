@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #283e50;
+  color: white;
+}
+h1 {
+  font-family: 'Lobster', cursive;
+}
