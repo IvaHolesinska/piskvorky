@@ -4,22 +4,18 @@
 
 /* Pozadí */
 body {
-  background: rgb(97, 93, 173);
-  background: linear-gradient(
-    180deg,
-    rgba(97, 93, 173, 1) 0%,
-    rgba(255, 200, 218, 1) 100%
-  );
+  background: linear-gradient(#615dad, #ffc8da);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 960px;
+  min-height: 100vh;
 }
 
 /* Hlavní sekce */
 .hlavni {
   background-color: #283e50;
-  color: white;
+  color: #ffffff;
+  margin: 50px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,13 +40,13 @@ h1 {
 
 p {
   text-align: center;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
-  margin: 15px;
-  padding-bottom: 10px;
-  justify-content: center;
   line-height: 1.5;
+  margin: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
 }
 
 /* Tlačítka */
@@ -59,14 +55,15 @@ p {
   flex-direction: column;
   width: 100%;
   text-align: center;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
 }
 
 .menu a {
   list-style: none;
   text-decoration: none;
-  height: 40px;
-  padding-top: 10px;
+  height: 50px;
+  padding-top: 15px;
 }
 
 .pravidla {
@@ -75,13 +72,13 @@ p {
   margin-bottom: 1px;
 }
 
-.menu a.pravidla:hover {
-  background-color: #1cbb96;
-}
-
 .hra {
   background-color: #0197f6;
   color: #ffffff;
+}
+
+.menu a.pravidla:hover {
+  background-color: #1cbb96;
 }
 
 .menu a.hra:hover {
