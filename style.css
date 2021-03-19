@@ -2,10 +2,82 @@
   box-sizing: border-box;
 }
 
+/* Pozadí */
 body {
+  background: rgb(97, 93, 173);
+  background: linear-gradient(
+    180deg,
+    rgba(97, 93, 173, 1) 0%,
+    rgba(255, 200, 218, 1) 100%
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 960px;
+}
+
+/* Hlavní sekce */
+.hlavni {
   background-color: #283e50;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
 }
+
+img {
+  width: 100%;
+}
+
 h1 {
   font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+p {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+/* Tlačítka */
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  list-style: none;
+  text-decoration: none;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.pravidla {
+  background-color: #1fcca4;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.menu a.pravidla:hover {
+  background-color: #1cbb96;
+}
+
+.hra {
+  background-color: #0197f6;
+  color: #ffffff;
+}
+
+.menu a.hra:hover {
+  background-color: #0090e9;
 }
