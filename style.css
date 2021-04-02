@@ -34,6 +34,7 @@ h1 {
   padding: 0;
   margin-bottom: 10px;
   margin-top: 20px;
+  text-align: center;
 }
 
 p,
@@ -89,10 +90,25 @@ li {
 }
 
 /* pravidla */
+
 li {
-  padding-bottom: 1px;
+  padding: 1px 50px 2px 1px;
+  margin-left: 30px;
+  text-align: left;
 }
 
 .obrazky {
   max-width: 280px;
+  padding: 15px 0px;
+}
+
+.pravidla {
+  max-width: 90%;
+}
+
+.kolecko,
+.krizek {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
 }
