@@ -9,7 +9,8 @@ body {
 }
 
 /* Hlavní sekce */
-.hlavni {
+.hlavni,
+.pravidla {
   background-color: #283e50;
   color: #ffffff;
   margin: 50px auto;
@@ -35,7 +36,8 @@ h1 {
   margin-top: 20px;
 }
 
-p {
+p,
+li {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
@@ -62,7 +64,7 @@ p {
   padding-top: 15px;
 }
 
-.pravidla {
+.pravidla--btn {
   background-color: #1fcca4;
   color: #ffffff;
   margin-bottom: 1px;
@@ -73,10 +75,15 @@ p {
   color: #ffffff;
 }
 
-.menu a.pravidla:hover {
+.menu a.pravidla--btn:hover {
   background-color: #1cbb96;
 }
 
 .menu a.hra:hover {
   background-color: #0090e9;
+}
+
+/* pravidla */
+li {
+  padding-bottom: 1px;
 }
