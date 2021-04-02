@@ -48,7 +48,8 @@ li {
 }
 
 /* Tlačítka */
-.menu {
+.menu,
+.pravidla__menu {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -57,14 +58,16 @@ li {
   font-size: 0.9rem;
 }
 
-.menu a {
+.menu a,
+.pravidla__menu a {
   list-style: none;
   text-decoration: none;
   height: 50px;
   padding-top: 15px;
 }
 
-.pravidla__btn {
+.pravidla__btn,
+.uvod__btn {
   background-color: #1fcca4;
   color: #ffffff;
   margin-bottom: 1px;
@@ -75,11 +78,13 @@ li {
   color: #ffffff;
 }
 
-.menu a.pravidla__btn:hover {
+.menu a.pravidla__btn:hover,
+.pravidla__menu a.uvod__btn:hover {
   background-color: #1cbb96;
 }
 
-.menu a.hra:hover {
+.menu a.hra:hover,
+.pravidla__menu a.hra:hover {
   background-color: #0090e9;
 }
 
