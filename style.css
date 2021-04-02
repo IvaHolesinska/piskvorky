@@ -64,7 +64,7 @@ li {
   padding-top: 15px;
 }
 
-.pravidla--btn {
+.pravidla__btn {
   background-color: #1fcca4;
   color: #ffffff;
   margin-bottom: 1px;
@@ -75,7 +75,7 @@ li {
   color: #ffffff;
 }
 
-.menu a.pravidla--btn:hover {
+.menu a.pravidla__btn:hover {
   background-color: #1cbb96;
 }
 
@@ -86,4 +86,8 @@ li {
 /* pravidla */
 li {
   padding-bottom: 1px;
+}
+
+.obrazky {
+  max-width: 280px;
 }
