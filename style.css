@@ -9,6 +9,10 @@ body {
 }
 
 /* Hlavní sekce */
+
+.hlavni {
+  width: 340px;
+}
 .hlavni,
 .pravidla {
   background-color: #283e50;
@@ -17,13 +21,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 340px;
   overflow: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  min-width: 300px;
 }
 
-img {
+.ctyrlistek__img {
   width: 100%;
 }
 
@@ -39,11 +43,11 @@ h1 {
 
 p,
 li,
-figure {
+.pravidla__ukazka {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   line-height: 1.5;
   margin: 10px;
   padding-bottom: 20px;
@@ -57,7 +61,7 @@ figure {
   width: 100%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1em;
 }
 
 .menu a,
@@ -75,7 +79,7 @@ figure {
   margin-bottom: 1px;
 }
 
-.hra {
+.hra__btn {
   background-color: #0197f6;
   color: #ffffff;
 }
@@ -85,26 +89,21 @@ figure {
   background-color: #1cbb96;
 }
 
-.menu a.hra:hover,
-.pravidla__menu a.hra:hover {
+.menu a.hra__btn:hover,
+.pravidla__menu a.hra__btn:hover {
   background-color: #0090e9;
 }
 
 /* pravidla */
 
+.pravidla__seznam {
+  padding-top: 5px;
+}
+
 li {
-  padding: 1px 50px 2px 1px;
+  padding: 1px 40px 2px 1px;
   margin-left: 30px;
   text-align: left;
-}
-
-.obrazky {
-  max-width: 290px;
-  padding: 15px 0px;
-}
-
-.pravidla {
-  max-width: 90%;
 }
 
 .kolecko,
@@ -114,7 +113,36 @@ li {
   filter: invert(100%);
 }
 
-figure {
+.obrazky {
+  margin: 20px;
+}
+
+.pravidla__popisek {
   font-style: italic;
-  padding: 10px 2px;
+  padding: 10px 13px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* media query */
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .obrazky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .pravidla__ukazka {
+    width: 45%;
+  }
+}
+
+@media (min-width: 630px) {
+  .pravidla {
+    max-width: 630px;
+  }
 }
