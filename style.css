@@ -14,7 +14,8 @@ body {
   width: 340px;
 }
 .hlavni,
-.pravidla {
+.pravidla,
+.hra {
   background-color: #283e50;
   color: #ffffff;
   margin: 50px auto;
@@ -33,6 +34,7 @@ body {
 
 h1 {
   font-family: 'Lobster', cursive;
+  color: #ffffff;
   font-size: 2.5rem;
   font-weight: normal;
   padding: 0;
@@ -85,7 +87,8 @@ li,
 }
 
 .menu a.pravidla__btn:hover,
-.pravidla__menu a.uvod__btn:hover {
+.pravidla__menu a.uvod__btn:hover,
+.menu a.uvod__btn:hover {
   background-color: #1cbb96;
 }
 
@@ -145,4 +148,36 @@ img {
   .pravidla {
     max-width: 630px;
   }
+}
+
+/* hra  */
+.hra {
+  background-color: inherit;
+  max-width: 80vmin;
+}
+
+.uvod__btn--home {
+  background-image: url('obrazky/home.svg');
+}
+
+.hra__btn--restart {
+  background-image: url('obrazky/restart.svg');
+}
+
+.uvod__btn--home,
+.hra__btn--restart {
+  background-repeat: no-repeat;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.hra__pole {
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  width: calc(100% / 10);
+  height: 70px;
+  opacity: 0.5;
+  border: 1.5px solid black;
 }
