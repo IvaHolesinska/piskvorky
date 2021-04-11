@@ -155,22 +155,30 @@ img {
 .hra {
   background-color: inherit;
   max-width: 80vmin;
+  margin-top: 0;
+  position: relative;
 }
 
 .hra__pole {
   display: flex;
   flex-wrap: wrap;
-  margin: 55px 0;
-}
-button {
-  width: calc(100% / 10);
-  height: 50px;
-  opacity: 0.5;
-  border: 1.5px solid black;
+  margin: 50px 0;
+  width: 100%;
+  border: 1px solid black;
 }
 
-.hra {
-  position: relative;
+.hra__pole button {
+  width: calc(100% / 10);
+  flex-grow: 1;
+  height: 8vmin;
+  opacity: 0.4;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+.hra__pole button:hover,
+.hra__pole button:focus {
+  opacity: 0.6;
 }
 
 .hra__ikony {
