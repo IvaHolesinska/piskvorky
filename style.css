@@ -88,12 +88,13 @@ li,
 
 .menu a.pravidla__btn:hover,
 .pravidla__menu a.uvod__btn:hover,
-.menu a.uvod__btn:hover {
+.hra__ikony a.uvod__btn:hover {
   background-color: #1cbb96;
 }
 
 .menu a.hra__btn:hover,
-.pravidla__menu a.hra__btn:hover {
+.pravidla__menu a.hra__btn:hover,
+.hra__ikony a.hra__btn:hover {
   background-color: #0090e9;
 }
 
@@ -156,28 +157,36 @@ img {
   max-width: 80vmin;
 }
 
-.uvod__btn--home {
-  background-image: url('obrazky/home.svg');
-}
-
-.hra__btn--restart {
-  background-image: url('obrazky/restart.svg');
-}
-
-.uvod__btn--home,
-.hra__btn--restart {
-  background-repeat: no-repeat;
-  max-width: 40px;
-  max-height: 40px;
-}
-
 .hra__pole {
   display: flex;
   flex-wrap: wrap;
 }
 button {
   width: calc(100% / 10);
-  height: 70px;
+  height: 50px;
   opacity: 0.5;
   border: 1.5px solid black;
+}
+
+.hra {
+  position: relative;
+}
+
+.hra__ikony {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.img__home,
+.img__restart {
+  padding: 5px;
+}
+
+.hra__ikony a {
+  border-radius: 10% 10% 10% 10%;
+  margin: 3px;
 }
