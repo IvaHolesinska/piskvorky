@@ -25,7 +25,7 @@ body {
   overflow: auto;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .ctyrlistek__img {
@@ -159,10 +159,44 @@ img {
   position: relative;
 }
 
+/* legenda - kdo hraje */
+.hra__hrac {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+.hra__hrac p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 0;
+}
+
+/* legenda - ikony */
+.hra__ikony {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.hra__ikony a {
+  border-radius: 10% 10% 10% 10%;
+  margin: 3px;
+}
+
+.img__home,
+.img__restart {
+  padding: 5px;
+}
+
+/* hrací pole */
 .hra__pole {
   display: flex;
   flex-wrap: wrap;
-  margin: 50px 0;
+  margin: 55px 0;
   width: 100%;
   border: 1px solid black;
 }
@@ -176,38 +210,8 @@ img {
   margin: 0;
   padding: 0;
 }
+
 .hra__pole button:hover,
 .hra__pole button:focus {
   opacity: 0.6;
-}
-
-.hra__ikony {
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 60px;
-  padding: 10px 0px;
-  margin: 10px 0px;
-}
-
-.img__home,
-.img__restart {
-  padding: 5px;
-}
-
-.hra__ikony a {
-  border-radius: 10% 10% 10% 10%;
-  margin: 3px;
-}
-
-.hra__hrac p {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-left: 0;
-}
-
-.hra__hrac {
-  position: absolute;
-  left: 0;
-  top: 80px;
 }
