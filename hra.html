@@ -11,26 +11,29 @@
     <link rel="stylesheet" href="style.css" />
     <title>Hra</title>
   </head>
-  <body>
-    <section class="hra">
+  <body class="body-hra">
+    <div class="hra">
       <h1 class="hra__nadpis">Piškvorky</h1>
+      <div class="lista">
+        <div class="hra__hrac">
+          <p class="hraje-text">
+            HRAJE:
+            <img class="kolecko" src="obrazky/circle.svg" alt="kolečko" />
+          </p>
+        </div>
 
-      <div class="hra__hrac">
-        <p>
-          HRAJE: <img class="kolecko" src="obrazky/circle.svg" alt="kolečko" />
-        </p>
-      </div>
-
-      <div class="hra__ikony">
-        <a href="index.html" class="uvod__btn uvod__btn--home"
-          ><img class="img__home" src="obrazky/home.svg" alt="ikona home"
-        /></a>
-        <a href="hra.html" class="hra__btn hra__btn--restart">
-          <img
-            class="img__restart"
-            src="obrazky/restart.svg"
-            alt="ikona znovunačtení"
-        /></a>
+        <div class="hra__ikony">
+          <a href="index.html" class="uvod__btn--home">
+            <img class="img__home" src="obrazky/home.svg" alt="ikona home"
+          /></a>
+          <a href="hra.html" class="hra__btn--restart">
+            <img
+              class="img__restart"
+              src="obrazky/restart.svg"
+              alt="ikona znovunačtení"
+            />
+          </a>
+        </div>
       </div>
       <div class="hra__pole">
         <button></button><button></button><button></button><button></button
@@ -59,6 +62,6 @@
         ><button></button><button></button><button></button><button></button
         ><button></button><button></button><button></button><button></button>
       </div>
-    </section>
+    </div>
   </body>
 </html>
