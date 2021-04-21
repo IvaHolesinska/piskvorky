@@ -112,7 +112,8 @@ li {
 }
 
 .kolecko,
-.krizek {
+.krizek,
+#symbol {
   width: 1em;
   height: 1em;
   filter: invert(100%);
