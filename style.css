@@ -214,12 +214,25 @@ img {
   width: calc(100% / 10);
   flex-grow: 1;
   height: 7vmin;
-  opacity: 0.4;
   border: 1px solid black;
+  background-color: #d4c6d4aa;
 }
 
 .hra__pole button:hover,
 .hra__pole button:focus {
-  opacity: 0.6;
   cursor: pointer;
+}
+
+.board__field--circle {
+  background-image: url(obrazky/circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.board__field--cross {
+  background-image: url(obrazky/cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
 }
