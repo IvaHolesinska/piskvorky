@@ -229,6 +229,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+  animation-name: be-bigger;
+  animation-duration: 0.15s;
 }
 
 .board__field--cross {
@@ -236,4 +238,15 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
+  animation-name: be-bigger;
+  animation-duration: 0.15s;
+}
+
+@keyframes be-bigger {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 65%;
+  }
 }
