@@ -4,6 +4,7 @@ let whoPlays = 'circle';
 
 const btnElm = document.querySelector('.hra__pole');
 const symbolElm = document.getElementById('symbol');
+const poleElm = document.querySelectorAll('.policko');
 
 const player = (event) => {
   if (whoPlays === 'circle') {
@@ -17,15 +18,29 @@ const player = (event) => {
     event.target.disabled = true;
     whoPlays = 'circle';
   }
+  // const field = event.target;
+  const isWinner = isWinningMove(event.target);
+  if (isWinner === true) {
+    setTimeout(() => {
+      if (whoPlays === 'circle') {
+        confirm('Vyhrál křížek. Spustit novou hru?');
+        location.reload();
+      } else {
+        confirm('Vyhrálo kolečko. Spustit novou hru?');
+        location.reload();
+      }
+    }, 250);
+  }
 };
+
 btnElm.addEventListener('click', player);
 
 // vypsat kolečko/křížek
 
 const getSymbol = (field) => {
-  if (field.target.classList.contains('board__field--cross')) {
+  if (field.classList.contains('board__field--cross')) {
     return 'cross';
-  } else if (field.target.classList.contains('board__field--circle')) {
+  } else if (field.classList.contains('board__field--circle')) {
     return 'circle';
   }
   return undefined;
@@ -34,16 +49,16 @@ const getSymbol = (field) => {
 //  vrátit prvek pro číslo řádku a sloupce
 
 const boardSize = 10;
-const fields = document.querySelectorAll('.policko');
+
 const getField = (row, column) => {
-  fields[row * boardSize + column];
+  return poleElm[row * boardSize + column];
 };
 
 // vrátit objekt s číslem řádku a sloupce
 
 const getPosition = (field) => {
   let fieldIndex = 0;
-  while (fieldIndex < fields.length && field !== fields[fieldIndex]) {
+  while (fieldIndex < poleElm.length && field !== poleElm[fieldIndex]) {
     fieldIndex++;
   }
   return {
