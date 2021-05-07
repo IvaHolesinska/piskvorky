@@ -22,12 +22,17 @@ const player = (event) => {
   const isWinner = isWinningMove(event.target);
   if (isWinner === true) {
     setTimeout(() => {
+      let repeat = 0;
       if (whoPlays === 'circle') {
-        confirm('Vyhrál křížek. Spustit novou hru?');
-        location.reload();
+        repeat = confirm('Vyhrál křížek. Spustit novou hru?');
+        if (repeat === true) {
+          location.reload();
+        }
       } else {
-        confirm('Vyhrálo kolečko. Spustit novou hru?');
-        location.reload();
+        repeat = confirm('Vyhrálo kolečko. Spustit novou hru?');
+        if (repeat === true) {
+          location.reload();
+        }
       }
     }, 250);
   }
